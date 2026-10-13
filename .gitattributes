@@ -1,0 +1,41 @@
+# Normalize text in Git; use predictable LF for source/documentation.
+* text=auto
+*.py text eol=lf
+# Preserve the original legacy source byte-for-byte, including CRLF.
+pdf_translator.py -text
+*.md text eol=lf
+*.txt text eol=lf
+.gitignore text eol=lf
+.gitattributes text eol=lf
+
+# Windows command scripts should check out with CRLF if added later.
+*.bat text eol=crlf
+*.cmd text eol=crlf
+
+# Never apply text conversion or textual diffs to these binary formats.
+*.[pP][dD][fF] binary
+*.[dD][oO][cC] binary
+*.[dD][oO][cC][xX] binary
+*.[dD][oO][cC][mM] binary
+*.[oO][dD][tT] binary
+*.[pP][nN][gG] binary
+*.[jJ][pP][gG] binary
+*.[jJ][pP][eE][gG] binary
+*.[gG][iI][fF] binary
+*.[wW][eE][bB][pP] binary
+*.[iI][cC][oO] binary
+*.ttf binary
+*.otf binary
+*.[gG][gG][uU][fF] binary
+*.[gG][gG][mM][lL] binary
+*.[sS][aA][fF][eE][tT][eE][nN][sS][oO][rR][sS] binary
+*.bin binary
+*.pt binary
+*.pth binary
+*.onnx binary
+*.ckpt binary
+*.zip binary
+*.7z binary
+*.rar binary
+*.tar binary
+*.gz binary

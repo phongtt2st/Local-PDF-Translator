@@ -1,0 +1,104 @@
+# Python bytecode, builds, and tool caches
+__pycache__/
+*.py[cod]
+*$py.class
+build/
+dist/
+*.egg-info/
+.eggs/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.tox/
+.nox/
+.coverage
+.coverage.*
+htmlcov/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+.env/
+venv.bak/
+
+# Environment files, secrets, and credentials (no real .env examples)
+.env
+.env.*
+*.key
+*.pem
+*.p12
+*.pfx
+*.keystore
+credentials.json
+credentials*.json
+secrets.json
+secrets.*
+service-account*.json
+id_rsa*
+id_ed25519*
+.aws/
+.ssh/
+.codex/
+
+# Editors and operating systems
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# Logs, caches, temporary files, and local audit output
+*.log
+logs/
+cache/
+.cache/
+tmp/
+temp/
+*.tmp
+*.temp
+*.bak
+
+# Private source documents and generated output directories
+input/
+inputs/
+output/
+outputs/
+private/
+
+# Document files anywhere, including uppercase extensions
+*.[pP][dD][fF]
+*.[dD][oO][cC]
+*.[dD][oO][cC][xX]
+*.[dD][oO][cC][mM]
+*.[oO][dD][tT]
+*.[rR][tT][fF]
+
+# Local model stores and common weight formats
+models/
+.ollama/
+*.[gG][gG][uU][fF]
+*.[gG][gG][mM][lL]
+*.[sS][aA][fF][eE][tT][eE][nN][sS][oO][rR][sS]
+*.bin
+*.pt
+*.pth
+*.onnx
+*.ckpt
+
+# Local bundles may conceal documents, environments, or model weights
+*.zip
+*.7z
+*.rar
+*.tar
+*.tar.gz
+*.tgz
+
+# Future public samples: review content, metadata, and redistribution rights.
+# Put a sample outside ignored directories and add an exact exception LAST:
+# !/samples/public-example.pdf
+# See README.md. No sample is bundled or automatically exempted.

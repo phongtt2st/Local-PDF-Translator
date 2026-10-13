@@ -1,0 +1,8 @@
+# Direct runtime dependencies for the preserved legacy script.
+# Baseline versions passed import checks on Python 3.12.3; use Python >=3.10.
+# PyMuPDF: import pymupdf (PDF opening and block extraction).
+PyMuPDF>=1.28.2,<2
+# ollama: ollama.chat (Ollama server client, not the server itself).
+ollama>=0.6.2,<0.7
+# python-docx: from docx import Document (DOCX generation).
+python-docx>=1.2.0,<2
